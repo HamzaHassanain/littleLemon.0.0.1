@@ -80,6 +80,8 @@ DATABASES = {
 
 4- Run the migrations
 
+- Make Sure you are in the root directory of the project
+
 ```bash
 python manage.py makemigrations
 
