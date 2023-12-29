@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logoimg">
+          <img
+            src="{% static 'LittleLemonLogo1.png' %}"
+            alt="logo"
+            width="500"
+          />
+        </div>
+        <ul class="navbar">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'booking' %}">Book</a></li>
+          <li><a href="{% url 'menu' %}">Menu</a></li>
+        </ul>
+      </header>
+      {% block content %} {% endblock %}
+      <footer>Copywrite 2024 Little Lemon</footer>
+    </main>
+  </body>
+</html>
+
+<!-- 
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nam vero ipsum
+    maiores, expedita saepe deleniti reprehenderit placeat ex libero aliquid.
+    Deserunt voluptates, et ut eveniet quisquam magnam quos corrupti.
+ -->

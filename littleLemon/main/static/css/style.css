@@ -1,0 +1,208 @@
+/* make variables for primary color */
+
+:root {
+  --primary-color: rgb(12, 56, 56);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+header .navbar {
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid #ccc;
+}
+header .navbar li {
+  list-style: none;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+footer {
+  border-radius: 10px;
+
+  padding: 1.2rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.welcome {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.heading {
+  margin-bottom: 2rem;
+}
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.menu-items img {
+  width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+.menu-items .item-info {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.menu-items .item-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.menu-items .item-info h3 a {
+  color: var(--primary-color);
+}
+.menu-items .item-info .price {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.about {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.no-items {
+  /* padding: 4rem; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.menu-item-single {
+  padding: 4rem;
+  /* width: 80%; */
+  margin: 0 auto;
+}
+.menu-item-single h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.menu-item-single .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.menu-item-single .content img {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+}
+.menu-item-single .content .description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.menu-item-single .content .category {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.menu-item-single .content .price {
+  font-size: 1.5rem;
+  color: rgb(128, 0, 70);
+}
+
+.booking-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.booking-form p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.booking-form input {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 3px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.booking-form select {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 3px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.booking-form button {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 3px solid #ccc;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+}
+
+ul.errorlist {
+  color: red;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
